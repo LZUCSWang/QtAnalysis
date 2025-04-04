@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/8666539_chart_pie.png</file>
+        <file>icons/8666750_calendar_schedule.png</file>
+        <file>icons/8666589_dollar_sign.png</file>
+        <file>icons/8666542_save.png</file>
+        <file>icons/8666672_camera.png</file>
+        <file>icons/8666712_align_left.png</file>
+        <file>icons/8666728_cw_refresh.png</file>
+        <file>icons/8666698_star.png</file>
+        <file>icons/8666771_filter_funnel.png</file>
+        <file>icons/8666791_loader_loading.png</file>
+        <file>icons/8666724_upload.png</file>
+        <file>icons/8666778_down_save_download.png</file>
+        <file>icons/8666575_left_up_corner.png</file>
+        <file>icons/8666571_out_log.png</file>
+        <file>icons/8666595_x.png</file>
+        <file>user_s.ui</file>
+        <file>icons/8666656_circle_check.png</file>
+        <file>icons/8666568_up_left_corner.png</file>
+        <file>icons/8666540_branch_git.png</file>
+        <file>icons/8666665_check.png</file>
+        <file>icons/8666666_square_check.png</file>
+        <file>icons/8666650_plus_file.png</file>
+        <file>icons/8666597_trash_2.png</file>
+    </qresource>
+</RCC>

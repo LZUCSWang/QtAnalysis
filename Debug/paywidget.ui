@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>payWidget</class>
+ <widget class="QWidget" name="payWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1483</width>
+    <height>985</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>开始</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,7,1">
+       <item>
+        <layout class="QGridLayout" name="gridLayout" rowstretch="2,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+         <item row="12" column="3">
+          <widget class="QCheckBox" name="onlyColored">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>仅展示上色</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666698_star.png</normaloff>:/icons/8666698_star.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="3">
+          <widget class="QRadioButton" name="enableMoneySort">
+           <property name="text">
+            <string>金额降序</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="save">
+           <property name="text">
+            <string>保存与刷新</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="3">
+          <widget class="QPushButton" name="grab">
+           <property name="text">
+            <string>抓取</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666672_camera.png</normaloff>:/icons/8666672_camera.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="dateFilter">
+           <property name="text">
+            <string>日期筛选:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="3">
+          <widget class="QPushButton" name="money">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>金额</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666589_dollar_sign.png</normaloff>:/icons/8666589_dollar_sign.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QCheckBox" name="showChart">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>展示统计图</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666539_chart_pie.png</normaloff>:/icons/8666539_chart_pie.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1" colspan="3">
+          <widget class="Line" name="line_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2" colspan="2">
+          <widget class="Line" name="line_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1" colspan="2">
+          <widget class="QCheckBox" name="enableMoneyFilter">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>金融</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="4">
+          <widget class="QTextBrowser" name="analyseResult">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" colspan="3">
+          <widget class="Line" name="line_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QPushButton" name="tempSave">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>预存</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666542_save.png</normaloff>:/icons/8666542_save.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2" colspan="2">
+          <widget class="Line" name="line_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="0" colspan="3">
+          <widget class="QComboBox" name="historyDataList">
+           <item>
+            <property name="text">
+             <string>1.原始表格</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="11" column="0" colspan="3">
+          <widget class="QRadioButton" name="enableDateSort_down">
+           <property name="text">
+            <string>时间升序</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="3">
+          <widget class="QRadioButton" name="enableMoneySort_down">
+           <property name="text">
+            <string>金额升序</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>数据表格</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="filter">
+           <property name="text">
+            <string>过滤器</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1" colspan="2">
+          <widget class="QCheckBox" name="enableDateFilter">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>日期</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="moneyFilter">
+           <property name="text">
+            <string>金额筛选:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="3">
+          <widget class="QPushButton" name="analyse">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>分析</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666712_align_left.png</normaloff>:/icons/8666712_align_left.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>统计分析结果</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0" colspan="3">
+          <widget class="QPushButton" name="apply">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>应用</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666771_filter_funnel.png</normaloff>:/icons/8666771_filter_funnel.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1" colspan="3">
+          <widget class="Line" name="line_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0" colspan="3">
+          <widget class="QRadioButton" name="enableDateSort">
+           <property name="text">
+            <string>时间降序</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="3">
+          <widget class="QLineEdit" name="nameLineEdit">
+           <property name="placeholderText">
+            <string>数据表名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="history_label">
+           <property name="text">
+            <string>历史表格</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
+          <widget class="QPushButton" name="date">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>日期</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666750_calendar_schedule.png</normaloff>:/icons/8666750_calendar_schedule.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="4">
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>450</height>
+            </size>
+           </property>
+           <column>
+            <property name="text">
+             <string>接收方</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>发送方</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>金额</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>时间</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>交易金额图</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1" colspan="2">
+          <widget class="GraphWidget" name="graphicsView"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="Line" name="line_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QCheckBox" name="message">
+           <property name="text">
+            <string>点击自动弹出点结点信息</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666540_branch_git.png</normaloff>:/icons/8666540_branch_git.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>历史记录中记录点的信息</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666568_up_left_corner.png</normaloff>:/icons/8666568_up_left_corner.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>历史记录</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="Line" name="line_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QTextBrowser" name="history"/>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>退出</string>
+           </property>
+           <property name="icon">
+            <iconset resource="icon.qrc">
+             <normaloff>:/icons/8666571_out_log.png</normaloff>:/icons/8666571_out_log.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>文件</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="Input_label">
+         <property name="text">
+          <string>导入文件</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>图片浏览</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QListWidget" name="Input_listWidget"/>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="addfile">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>添加</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666650_plus_file.png</normaloff>:/icons/8666650_plus_file.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="importfile">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>导入</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666778_down_save_download.png</normaloff>:/icons/8666778_down_save_download.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QListWidget" name="OutputImages_listWidget"/>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="importfile_5">
+             <property name="text">
+              <string>导出</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666724_upload.png</normaloff>:/icons/8666724_upload.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="refresh">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>刷新</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666728_cw_refresh.png</normaloff>:/icons/8666728_cw_refresh.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="Output_label">
+         <property name="text">
+          <string>导出文件</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QListWidget" name="Output_listWidget"/>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="outputFile">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>一起导出</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666724_upload.png</normaloff>:/icons/8666724_upload.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="sigle_outputFile">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>逐个导出</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666724_upload.png</normaloff>:/icons/8666724_upload.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="outputDelete_pushButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>删除选中</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666595_x.png</normaloff>:/icons/8666595_x.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="clear_output">
+             <property name="text">
+              <string>清空</string>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icons/8666597_trash_2.png</normaloff>:/icons/8666597_trash_2.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="imageShow">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>graphwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

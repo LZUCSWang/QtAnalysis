@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Query</class>
+ <widget class="QMainWindow" name="Query">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Century Gothic</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>查询功能分区</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>11</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>通信双方</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="label_13">
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>己方号码：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="3">
+     <widget class="QLineEdit" name="lineEdit1">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6" colspan="2">
+     <widget class="QLabel" name="label_15">
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>对方号码：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8" colspan="4">
+     <widget class="QLineEdit" name="lineEdit2">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="12">
+     <widget class="QPushButton" name="pbt1">
+      <property name="font">
+       <font>
+        <family>Algerian</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="13">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>---------------------------------------------------------------------------------</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>11</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>通信一方</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="3">
+     <widget class="QLineEdit" name="lineEdit3">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="12">
+     <widget class="QPushButton" name="pbt2">
+      <property name="font">
+       <font>
+        <family>Algerian</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="13">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>---------------------------------------------------------------------------------</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="4">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>11</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>通信时间段</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLineEdit" name="lineEdit4">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>2020</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLineEdit" name="lineEdit5">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QLabel" name="label_9">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="4">
+     <widget class="QLineEdit" name="lineEdit6">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>18</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="5">
+     <widget class="QLabel" name="label_12">
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>至</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="6">
+     <widget class="QLineEdit" name="lineEdit7">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>2020</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="7" colspan="2">
+     <widget class="QLabel" name="label_11">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="9">
+     <widget class="QLineEdit" name="lineEdit8">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="10">
+     <widget class="QLabel" name="label_10">
+      <property name="font">
+       <font>
+        <family>Arial Narrow</family>
+        <pointsize>26</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="11">
+     <widget class="QLineEdit" name="lineEdit9">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>20</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="12">
+     <widget class="QPushButton" name="pbt3">
+      <property name="font">
+       <font>
+        <family>Algerian</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="13">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>----------------------------------------------------------------------------</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="12">
+     <widget class="QPushButton" name="pbt4">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT Bold</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>795</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
